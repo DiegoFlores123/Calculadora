@@ -1,0 +1,39 @@
+body
+{
+    background-color: black;
+}
+.orange{
+    background-color: orange;
+    color: white;
+    border-color: orange;
+}
+.black{
+    background-color: black;
+    color: white;
+    border-color: rgb(99, 98, 98);
+}
+.grey{
+    background-color: grey;
+    color: black;
+    border-color: grey;
+}
+.blacktext{
+    background-color: black;
+    border: 0px;
+    color: white;
+    text-align: right;
+    width: 130px;
+}
+.botones input{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 10px;
+}
+#botoncero{
+    width: 64px;
+    text-align: left;
+}
+#campo{
+    font-size: 30px;
+}
