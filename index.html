@@ -8,34 +8,48 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div >
+
+    <!-- QUE NO SE TE OLVIDE LINKEAR CADA VEZ QUE HAGAS UN ARCHIVO NUEVO CUANDO TE LO PIDE >:( -->
+    <script src="/main.js"></script>
+
+<div class="center">
     <form name="calculadora">
         <input type="textfield" value="0" class="blacktext" name="cal" readonly id="campo">
         <br>
         <div class="botones">
-        <input type="button" value="AC" class="grey" id="boton">
-        <input type="button" value="+/-" class="grey">
-        <input type="button" value="%" class="grey">
-        <input type="button" value="/" class="orange">
+        <input type="button" value="AC" class="grey" id="boton" onclick="funciones(this.value)">
+        <input type="button" value="%" class="grey id="boton" onclick="funciones(this.value)"">
+        <input type="button" value="OFF" class="grey" id="boton" onclick="funciones(this.value)">
+
+        <input type="button" value="/" class="orange" onclick="simbolos(this.value)">
+        
         <br>
-        <input type="button" value="7" class="black">
-        <input type="button" value="8" class="black">
-        <input type="button" value="9" class="black">
-        <input type="button" value="x" class="orange">
+        <input type="button" value="7" class="black" onclick="numeros(this.value)">
+        <input type="button" value="8" class="black" onclick="numeros(this.value)">
+        <input type="button" value="9" class="black" onclick="numeros(this.value)">
+
+        <input type="button" value="*" class="orange" onclick="simbolos(this.value)">
+
         <br>
-        <input type="button" value="4" class="black">
-        <input type="button" value="5" class="black">
-        <input type="button" value="6" class="black">
-        <input type="button" value="-" class="orange">
+        <input type="button" value="4" class="black" onclick="numeros(this.value)">
+        <input type="button" value="5" class="black" onclick="numeros(this.value)">
+        <input type="button" value="6" class="black" onclick="numeros(this.value)">
+
+        <input type="button" value="-" class="orange" onclick="simbolos(this.value)"> 
+
         <br>
-        <input type="button" value="1" class="black">
-        <input type="button" value="2" class="black">
-        <input type="button" value="3" class="black">
-        <input type="button" value="+" class="orange">
+        <input type="button" value="1" class="black" onclick="numeros(this.value)">
+        <input type="button" value="2" class="black" onclick="numeros(this.value)">
+        <input type="button" value="3" class="black" onclick="numeros(this.value)">
+
+        <input type="button" value="+" class="orange" onclick="simbolos(this.value)">
+
         <br>
-        <input type="button" value="0" class="black" id="botoncero">
-        <input type="button" value="." class="black">
-        <input type="button" value="=" class="orange">
+        <input type="button" value="0" class="black" id="botoncero" onclick="numeros(this.value)">
+        <input type="button" value="." class="black" onclick="numeros(this.value)">
+
+        <input type="button" value="=" class="orange" onclick="resultado()">
+
         </div>
     </form>
 </div> 

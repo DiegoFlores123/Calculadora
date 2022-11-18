@@ -22,18 +22,24 @@ body
     border: 0px;
     color: white;
     text-align: right;
-    width: 130px;
+    width: 485px;
 }
 .botones input{
-    width: 30px;
-    height: 30px;
+    width: 120px;
+    height: 100px;
     text-align: center;
-    font-size: 10px;
+    font-size: 50px;
 }
 #botoncero{
-    width: 64px;
+    width: 244px;
     text-align: left;
+    padding-left: 45px;
 }
 #campo{
-    font-size: 30px;
+    font-size: 100px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
 }
