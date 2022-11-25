@@ -1,23 +1,17 @@
 function funciones(funcion){
-
     if (funcion == "AC"){
-        document.getElementById("campo").value = 0
+        document.getElementById("campo").value = ""
     }
     if (funcion == "%"){
         document.getElementById("campo").value += funcion
     }
     if (funcion == "OFF"){
-        document.getElementById("campo").value = ""
+        document.getElementById("campo").value = "OFF"
     }
 }
 
 function numeros(añadir){
-    if (document.getElementById("campo").value == 0 && añadir != "."){
-        document.getElementById("campo").value = añadir
-    }
-    else {
-        document.getElementById("campo").value += añadir
-    }
+    document.getElementById("campo").value += añadir   
 }
 
 function simbolos(añadir){
